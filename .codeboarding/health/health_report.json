@@ -1,0 +1,838 @@
+{
+  "repository_name": ".codeboarding-target",
+  "timestamp": "2026-10-10T19:26:38.400053+00:00",
+  "overall_score": 0.9913472070098576,
+  "check_summaries": [
+    {
+      "check_name": "function_size",
+      "description": "Checks that functions/methods do not exceed line count thresholds",
+      "languages": [
+        "javascript",
+        "typescript"
+      ],
+      "check_type": "standard",
+      "total_entities_checked": 9120,
+      "findings_count": 74,
+      "warning_count": 74,
+      "score": 0.9918859649122806,
+      "finding_groups": [
+        {
+          "severity": "warning",
+          "threshold": 150,
+          "description": "Functions exceeding 150.0 lines",
+          "entities": [
+            {
+              "entity_name": "packages.coding-agent.src.core.export-html.template.<function>",
+              "file_path": "packages/coding-agent/src/core/export-html/template.js",
+              "line_start": 1,
+              "line_end": 1918,
+              "metric_value": 1917
+            },
+            {
+              "entity_name": "packages.coding-agent.src.extensions.mcp.index.createMcpExtension",
+              "file_path": "packages/coding-agent/src/extensions/mcp/index.ts",
+              "line_start": 280,
+              "line_end": 1338,
+              "metric_value": 1058
+            },
+            {
+              "entity_name": "packages.coding-agent.src.extensions.mcp.index.createMcpExtension.<function>",
+              "file_path": "packages/coding-agent/src/extensions/mcp/index.ts",
+              "line_start": 281,
+              "line_end": 1337,
+              "metric_value": 1056
+            },
+            {
+              "entity_name": "packages.ai.scripts.generate-models.generateModels",
+              "file_path": "packages/ai/scripts/generate-models.ts",
+              "line_start": 2710,
+              "line_end": 3593,
+              "metric_value": 883
+            },
+            {
+              "entity_name": "packages.ai.scripts.generate-models.loadModelsDevData",
+              "file_path": "packages/ai/scripts/generate-models.ts",
+              "line_start": 1741,
+              "line_end": 2584,
+              "metric_value": 843
+            },
+            {
+              "entity_name": "packages.coding-agent.src.modes.rpc.rpc-mode.runRpcMode",
+              "file_path": "packages/coding-agent/src/modes/rpc/rpc-mode.ts",
+              "line_start": 54,
+              "line_end": 819,
+              "metric_value": 765
+            },
+            {
+              "entity_name": "packages.coding-agent.src.modes.interactive.components.settings-selector.SettingsSelectorComponent.constructor",
+              "file_path": "packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+              "line_start": 468,
+              "line_end": 990,
+              "metric_value": 522
+            },
+            {
+              "entity_name": "packages.coding-agent.src.main.main",
+              "file_path": "packages/coding-agent/src/main.ts",
+              "line_start": 573,
+              "line_end": 999,
+              "metric_value": 426
+            },
+            {
+              "entity_name": "packages.ai.src.api.openai-completions.stream.<function>",
+              "file_path": "packages/ai/src/api/openai-completions.ts",
+              "line_start": 312,
+              "line_end": 731,
+              "metric_value": 419
+            },
+            {
+              "entity_name": "packages.coding-agent.src.modes.interactive.interactive-mode.InteractiveMode.handleEvent",
+              "file_path": "packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+              "line_start": 3406,
+              "line_end": 3792,
+              "metric_value": 386
+            },
+            {
+              "entity_name": "packages.tui.src.keys.matchesKey",
+              "file_path": "packages/tui/src/keys.ts",
+              "line_start": 859,
+              "line_end": 1245,
+              "metric_value": 386
+            },
+            {
+              "entity_name": "packages.tui.src.tui-main-screen.TuiMainScreen.doRender",
+              "file_path": "packages/tui/src/tui-main-screen.ts",
+              "line_start": 247,
+              "line_end": 617,
+              "metric_value": 370
+            },
+            {
+              "entity_name": "packages.ai.src.api.openai-responses-shared.processResponsesStream",
+              "file_path": "packages/ai/src/api/openai-responses-shared.ts",
+              "line_start": 433,
+              "line_end": 777,
+              "metric_value": 344
+            },
+            {
+              "entity_name": "packages.ai.src.api.anthropic-messages.stream.<function>",
+              "file_path": "packages/ai/src/api/anthropic-messages.ts",
+              "line_start": 580,
+              "line_end": 898,
+              "metric_value": 318
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.extensions.loader.createExtensionAPI",
+              "file_path": "packages/coding-agent/src/core/extensions/loader.ts",
+              "line_start": 244,
+              "line_end": 549,
+              "metric_value": 305
+            },
+            {
+              "entity_name": "packages.tui.src.components.editor.Editor.handleInput",
+              "file_path": "packages/tui/src/components/editor.ts",
+              "line_start": 696,
+              "line_end": 996,
+              "metric_value": 300
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.sdk.createAgentSession",
+              "file_path": "packages/coding-agent/src/core/sdk.ts",
+              "line_start": 191,
+              "line_end": 487,
+              "metric_value": 296
+            },
+            {
+              "entity_name": "packages.ai.src.api.openai-completions.convertMessages",
+              "file_path": "packages/ai/src/api/openai-completions.ts",
+              "line_start": 1193,
+              "line_end": 1480,
+              "metric_value": 287
+            },
+            {
+              "entity_name": "scripts.session-transcripts.main",
+              "file_path": "scripts/session-transcripts.ts",
+              "line_start": 143,
+              "line_end": 404,
+              "metric_value": 261
+            },
+            {
+              "entity_name": "packages.coding-agent.src.package-manager-cli.handlePackageCommand",
+              "file_path": "packages/coding-agent/src/package-manager-cli.ts",
+              "line_start": 890,
+              "line_end": 1141,
+              "metric_value": 251
+            },
+            {
+              "entity_name": "packages.ai.src.api.openai-codex-responses.stream.<function>",
+              "file_path": "packages/ai/src/api/openai-codex-responses.ts",
+              "line_start": 245,
+              "line_end": 495,
+              "metric_value": 250
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.tools.grep.createGrepToolDefinition",
+              "file_path": "packages/coding-agent/src/core/tools/grep.ts",
+              "line_start": 70,
+              "line_end": 319,
+              "metric_value": 249
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.tools.find.createFindToolDefinition",
+              "file_path": "packages/coding-agent/src/core/tools/find.ts",
+              "line_start": 70,
+              "line_end": 314,
+              "metric_value": 244
+            },
+            {
+              "entity_name": "packages.coding-agent.src.experimental.durable.runtime.openDurable",
+              "file_path": "packages/coding-agent/src/experimental/durable/runtime.ts",
+              "line_start": 124,
+              "line_end": 367,
+              "metric_value": 243
+            },
+            {
+              "entity_name": "packages.coding-agent.src.experimental.vacation.runtime.openDurable",
+              "file_path": "packages/coding-agent/src/experimental/vacation/runtime.ts",
+              "line_start": 123,
+              "line_end": 363,
+              "metric_value": 240
+            },
+            {
+              "entity_name": "packages.ai.src.providers.faux.createFauxCore",
+              "file_path": "packages/ai/src/providers/faux.ts",
+              "line_start": 454,
+              "line_end": 692,
+              "metric_value": 238
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.tools.grep.createGrepToolDefinition.execute",
+              "file_path": "packages/coding-agent/src/core/tools/grep.ts",
+              "line_start": 81,
+              "line_end": 316,
+              "metric_value": 235
+            },
+            {
+              "entity_name": "packages.coding-agent.src.modes.interactive.interactive-mode.InteractiveMode.showSettingsSelector",
+              "file_path": "packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+              "line_start": 4909,
+              "line_end": 5143,
+              "metric_value": 234
+            },
+            {
+              "entity_name": "packages.ai.src.api.google-generative-ai.stream.<function>",
+              "file_path": "packages/ai/src/api/google-generative-ai.ts",
+              "line_start": 67,
+              "line_end": 300,
+              "metric_value": 233
+            },
+            {
+              "entity_name": "packages.ai.src.api.google-vertex.stream.<function>",
+              "file_path": "packages/ai/src/api/google-vertex.ts",
+              "line_start": 76,
+              "line_end": 308,
+              "metric_value": 232
+            },
+            {
+              "entity_name": "packages.coding-agent.src.modes.interactive.interactive-mode.InteractiveMode.showSettingsSelector.showSelector() callback",
+              "file_path": "packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+              "line_start": 4910,
+              "line_end": 5142,
+              "metric_value": 232
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.tools.find.createFindToolDefinition.execute",
+              "file_path": "packages/coding-agent/src/core/tools/find.ts",
+              "line_start": 81,
+              "line_end": 311,
+              "metric_value": 230
+            },
+            {
+              "entity_name": "packages.durable.src.storage.jsonl.storage.JsonlStorage.recover",
+              "file_path": "packages/durable/src/storage/jsonl/storage.ts",
+              "line_start": 535,
+              "line_end": 765,
+              "metric_value": 230
+            },
+            {
+              "entity_name": "packages.coding-agent.src.experimental.session-worker.run",
+              "file_path": "packages/coding-agent/src/experimental/session-worker.ts",
+              "line_start": 509,
+              "line_end": 737,
+              "metric_value": 228
+            },
+            {
+              "entity_name": "packages.ai.src.api.bedrock-converse-stream.stream.<function>",
+              "file_path": "packages/ai/src/api/bedrock-converse-stream.ts",
+              "line_start": 136,
+              "line_end": 360,
+              "metric_value": 224
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.tools.find.createFindToolDefinition.execute.<function>",
+              "file_path": "packages/coding-agent/src/core/tools/find.ts",
+              "line_start": 88,
+              "line_end": 310,
+              "metric_value": 222
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.tools.grep.createGrepToolDefinition.execute.<function>",
+              "file_path": "packages/coding-agent/src/core/tools/grep.ts",
+              "line_start": 104,
+              "line_end": 315,
+              "metric_value": 211
+            },
+            {
+              "entity_name": "packages.ai.src.api.openai-responses-shared.convertResponsesMessages",
+              "file_path": "packages/ai/src/api/openai-responses-shared.ts",
+              "line_start": 145,
+              "line_end": 354,
+              "metric_value": 209
+            },
+            {
+              "entity_name": "packages.ai.src.api.openai-completions.buildParams",
+              "file_path": "packages/ai/src/api/openai-completions.ts",
+              "line_start": 802,
+              "line_end": 1010,
+              "metric_value": 208
+            },
+            {
+              "entity_name": "packages.coding-agent.src.cli.args.printHelp",
+              "file_path": "packages/coding-agent/src/cli/args.ts",
+              "line_start": 273,
+              "line_end": 479,
+              "metric_value": 206
+            },
+            {
+              "entity_name": "packages.ai.src.api.anthropic-messages.convertMessages",
+              "file_path": "packages/ai/src/api/anthropic-messages.ts",
+              "line_start": 1308,
+              "line_end": 1512,
+              "metric_value": 204
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.model-resolver.resolveCliModel",
+              "file_path": "packages/coding-agent/src/core/model-resolver.ts",
+              "line_start": 406,
+              "line_end": 606,
+              "metric_value": 200
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.tools.find.createFindToolDefinition.execute.<function>.<function>",
+              "file_path": "packages/coding-agent/src/core/tools/find.ts",
+              "line_start": 109,
+              "line_end": 309,
+              "metric_value": 200
+            },
+            {
+              "entity_name": "packages.ai.src.api.mistral-conversations.consumeChatStream",
+              "file_path": "packages/ai/src/api/mistral-conversations.ts",
+              "line_start": 576,
+              "line_end": 775,
+              "metric_value": 199
+            },
+            {
+              "entity_name": "packages.coding-agent.src.cli.args.parseArgs",
+              "file_path": "packages/coding-agent/src/cli/args.ts",
+              "line_start": 72,
+              "line_end": 271,
+              "metric_value": 199
+            },
+            {
+              "entity_name": "packages.coding-agent.src.modes.interactive.interactive-mode.InteractiveMode.setupEditorSubmitHandler",
+              "file_path": "packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+              "line_start": 3199,
+              "line_end": 3398,
+              "metric_value": 199
+            },
+            {
+              "entity_name": "packages.coding-agent.src.package-manager-cli.parsePackageCommand",
+              "file_path": "packages/coding-agent/src/package-manager-cli.ts",
+              "line_start": 397,
+              "line_end": 595,
+              "metric_value": 198
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.tools.grep.createGrepToolDefinition.execute.<function>.<function>",
+              "file_path": "packages/coding-agent/src/core/tools/grep.ts",
+              "line_start": 117,
+              "line_end": 314,
+              "metric_value": 197
+            },
+            {
+              "entity_name": "packages.coding-agent.src.modes.interactive.interactive-mode.InteractiveMode.setupEditorSubmitHandler.onSubmit",
+              "file_path": "packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+              "line_start": 3200,
+              "line_end": 3397,
+              "metric_value": 197
+            },
+            {
+              "entity_name": "packages.evals.src.harness.runPiCodingAgent",
+              "file_path": "packages/evals/src/harness.ts",
+              "line_start": 272,
+              "line_end": 469,
+              "metric_value": 197
+            },
+            {
+              "entity_name": "packages.coding-agent.src.modes.interactive.interactive-mode.InteractiveMode.showLoadedResources",
+              "file_path": "packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+              "line_start": 1772,
+              "line_end": 1966,
+              "metric_value": 194
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.agent-session.AgentSession.navigateTree",
+              "file_path": "packages/coding-agent/src/core/agent-session.ts",
+              "line_start": 3964,
+              "line_end": 4156,
+              "metric_value": 192
+            },
+            {
+              "entity_name": "packages.durable.src.harness.events.translate",
+              "file_path": "packages/durable/src/harness/events.ts",
+              "line_start": 221,
+              "line_end": 410,
+              "metric_value": 189
+            },
+            {
+              "entity_name": "packages.coding-agent.src.extensions.llama.index.llamaExtension",
+              "file_path": "packages/coding-agent/src/extensions/llama/index.ts",
+              "line_start": 42,
+              "line_end": 230,
+              "metric_value": 188
+            },
+            {
+              "entity_name": "packages.durable.src.harness.scheduler.TaskScheduler.#runtime",
+              "file_path": "packages/durable/src/harness/scheduler.ts",
+              "line_start": 1502,
+              "line_end": 1690,
+              "metric_value": 188
+            },
+            {
+              "entity_name": "packages.coding-agent.src.experimental.server.startServer",
+              "file_path": "packages/coding-agent/src/experimental/server.ts",
+              "line_start": 493,
+              "line_end": 679,
+              "metric_value": 186
+            },
+            {
+              "entity_name": "packages.coding-agent.src.modes.interactive.interactive-mode.InteractiveMode.init",
+              "file_path": "packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+              "line_start": 943,
+              "line_end": 1127,
+              "metric_value": 184
+            },
+            {
+              "entity_name": "packages.ai.scripts.generate-models.applyThinkingLevelMetadata",
+              "file_path": "packages/ai/scripts/generate-models.ts",
+              "line_start": 1038,
+              "line_end": 1220,
+              "metric_value": 182
+            },
+            {
+              "entity_name": "packages.tui.src.components.markdown.Markdown.renderToken",
+              "file_path": "packages/tui/src/components/markdown.ts",
+              "line_start": 464,
+              "line_end": 642,
+              "metric_value": 178
+            },
+            {
+              "entity_name": "packages.tui.src.latex.LatexParser.parseCommand",
+              "file_path": "packages/tui/src/latex.ts",
+              "line_start": 1014,
+              "line_end": 1192,
+              "metric_value": 178
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.export-html.template.<function>.renderToolCall",
+              "file_path": "packages/coding-agent/src/core/export-html/template.js",
+              "line_start": 909,
+              "line_end": 1084,
+              "metric_value": 175
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.tools.bash.createShellToolDefinition",
+              "file_path": "packages/coding-agent/src/core/tools/bash.ts",
+              "line_start": 243,
+              "line_end": 415,
+              "metric_value": 172
+            },
+            {
+              "entity_name": "packages.tui.src.components.markdown.Markdown.renderTable",
+              "file_path": "packages/tui/src/components/markdown.ts",
+              "line_start": 852,
+              "line_end": 1024,
+              "metric_value": 172
+            },
+            {
+              "entity_name": "packages.ai.src.api.transform-messages.transformMessages",
+              "file_path": "packages/ai/src/api/transform-messages.ts",
+              "line_start": 64,
+              "line_end": 235,
+              "metric_value": 171
+            },
+            {
+              "entity_name": "packages.ai.src.api.bedrock-converse-stream.convertMessages",
+              "file_path": "packages/ai/src/api/bedrock-converse-stream.ts",
+              "line_start": 976,
+              "line_end": 1146,
+              "metric_value": 170
+            },
+            {
+              "entity_name": "packages.durable.src.harness.tool.run",
+              "file_path": "packages/durable/src/harness/tool.ts",
+              "line_start": 263,
+              "line_end": 429,
+              "metric_value": 166
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.resource-loader.DefaultResourceLoader.reload",
+              "file_path": "packages/coding-agent/src/core/resource-loader.ts",
+              "line_start": 513,
+              "line_end": 678,
+              "metric_value": 165
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.package-manager.DefaultPackageManager.addAutoDiscoveredResources",
+              "file_path": "packages/coding-agent/src/core/package-manager.ts",
+              "line_start": 2413,
+              "line_end": 2577,
+              "metric_value": 164
+            },
+            {
+              "entity_name": "packages.ai.src.api.anthropic-messages.buildParams",
+              "file_path": "packages/ai/src/api/anthropic-messages.ts",
+              "line_start": 1124,
+              "line_end": 1287,
+              "metric_value": 163
+            },
+            {
+              "entity_name": "packages.tui.src.components.input.Input.handleInput",
+              "file_path": "packages/tui/src/components/input.ts",
+              "line_start": 71,
+              "line_end": 234,
+              "metric_value": 163
+            },
+            {
+              "entity_name": "packages.agent.src.agent-loop.runLoop",
+              "file_path": "packages/agent/src/agent-loop.ts",
+              "line_start": 163,
+              "line_end": 321,
+              "metric_value": 158
+            },
+            {
+              "entity_name": "packages.coding-agent.src.modes.interactive.components.easter-egg-3d.EasterEgg3dAnimation.render",
+              "file_path": "packages/coding-agent/src/modes/interactive/components/easter-egg-3d.ts",
+              "line_start": 950,
+              "line_end": 1108,
+              "metric_value": 158
+            },
+            {
+              "entity_name": "packages.ai.src.api.google-shared.convertMessages",
+              "file_path": "packages/ai/src/api/google-shared.ts",
+              "line_start": 191,
+              "line_end": 343,
+              "metric_value": 152
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.tools.bash.createShellToolDefinition.execute",
+              "file_path": "packages/coding-agent/src/core/tools/bash.ts",
+              "line_start": 261,
+              "line_end": 412,
+              "metric_value": 151
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "check_name": "circular_dependencies",
+      "description": "Detects circular dependencies between packages",
+      "languages": [
+        "javascript",
+        "typescript"
+      ],
+      "check_type": "circular_dependencies",
+      "cycles": [
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.client.src -> packages.coding-agent.src.experimental -> packages.coding-agent.src.experimental.services -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.client.src -> packages.coding-agent.src.experimental -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.client.src -> packages.coding-agent.src.experimental -> packages.server.src.transports.unix -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.experimental -> packages.coding-agent.src.experimental.services -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.experimental -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.experimental -> packages.server.src.transports.unix -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.experimental -> packages.coding-agent.src.experimental.services -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.experimental -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.experimental -> packages.server.src.transports.unix -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.utils -> packages.tui.src -> packages.coding-agent.src.experimental -> packages.coding-agent.src.experimental.services -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.utils -> packages.tui.src -> packages.coding-agent.src.experimental -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.utils -> packages.tui.src -> packages.coding-agent.src.experimental -> packages.server.src.transports.unix -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.utils -> packages.tui.src -> packages.tui.src.components -> packages.coding-agent.src.experimental -> packages.coding-agent.src.experimental.services -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.utils -> packages.tui.src -> packages.tui.src.components -> packages.coding-agent.src.experimental -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.utils -> packages.tui.src -> packages.tui.src.components -> packages.coding-agent.src.experimental -> packages.server.src.transports.unix -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.utils -> packages.tui.src.components -> packages.coding-agent.src.experimental -> packages.coding-agent.src.experimental.services -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.utils -> packages.tui.src.components -> packages.coding-agent.src.experimental -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.utils -> packages.tui.src.components -> packages.coding-agent.src.experimental -> packages.server.src.transports.unix -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.utils -> packages.tui.src.components -> packages.tui.src -> packages.coding-agent.src.experimental -> packages.coding-agent.src.experimental.services -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.utils -> packages.tui.src.components -> packages.tui.src -> packages.coding-agent.src.experimental -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.utils -> packages.tui.src.components -> packages.tui.src -> packages.coding-agent.src.experimental -> packages.server.src.transports.unix -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.tui.src -> packages.coding-agent.src.experimental -> packages.coding-agent.src.experimental.services -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.tui.src -> packages.coding-agent.src.experimental -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.tui.src -> packages.coding-agent.src.experimental -> packages.server.src.transports.unix -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.tui.src -> packages.tui.src.components -> packages.coding-agent.src.experimental -> packages.coding-agent.src.experimental.services -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.tui.src -> packages.tui.src.components -> packages.coding-agent.src.experimental -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.tui.src -> packages.tui.src.components -> packages.coding-agent.src.experimental -> packages.server.src.transports.unix -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.tui.src.components -> packages.coding-agent.src.experimental -> packages.coding-agent.src.experimental.services -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.tui.src.components -> packages.coding-agent.src.experimental -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.tui.src.components -> packages.coding-agent.src.experimental -> packages.server.src.transports.unix -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.tui.src.components -> packages.tui.src -> packages.coding-agent.src.experimental -> packages.coding-agent.src.experimental.services -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.tui.src.components -> packages.tui.src -> packages.coding-agent.src.experimental -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.modes.interactive.components -> packages.tui.src.components -> packages.tui.src -> packages.coding-agent.src.experimental -> packages.server.src.transports.unix -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.utils -> packages.tui.src -> packages.coding-agent.src.experimental -> packages.coding-agent.src.experimental.services -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.utils -> packages.tui.src -> packages.coding-agent.src.experimental -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.utils -> packages.tui.src -> packages.coding-agent.src.experimental -> packages.server.src.transports.unix -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.utils -> packages.tui.src -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.experimental -> packages.coding-agent.src.experimental.services -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.utils -> packages.tui.src -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.experimental -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.utils -> packages.tui.src -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.experimental -> packages.server.src.transports.unix -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.utils -> packages.tui.src -> packages.coding-agent.src.modes.interactive.components -> packages.tui.src.components -> packages.coding-agent.src.experimental -> packages.coding-agent.src.experimental.services -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.utils -> packages.tui.src -> packages.coding-agent.src.modes.interactive.components -> packages.tui.src.components -> packages.coding-agent.src.experimental -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.utils -> packages.tui.src -> packages.coding-agent.src.modes.interactive.components -> packages.tui.src.components -> packages.coding-agent.src.experimental -> packages.server.src.transports.unix -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.utils -> packages.tui.src -> packages.tui.src.components -> packages.coding-agent.src.experimental -> packages.coding-agent.src.experimental.services -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.utils -> packages.tui.src -> packages.tui.src.components -> packages.coding-agent.src.experimental -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.utils -> packages.tui.src -> packages.tui.src.components -> packages.coding-agent.src.experimental -> packages.server.src.transports.unix -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.utils -> packages.tui.src -> packages.tui.src.components -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.experimental -> packages.coding-agent.src.experimental.services -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.utils -> packages.tui.src -> packages.tui.src.components -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.experimental -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.utils -> packages.tui.src -> packages.tui.src.components -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.experimental -> packages.server.src.transports.unix -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.utils -> packages.tui.src.components -> packages.coding-agent.src.experimental -> packages.coding-agent.src.experimental.services -> packages.server.src",
+        "packages.server.src -> packages.chord.src.context -> packages.chord.src -> packages.chord.src.facets -> packages.chord.src.services -> packages.durable.src.session -> packages.durable.src.harness -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.extensions.codemode -> packages.coding-agent.src.utils -> packages.tui.src.components -> packages.coding-agent.src.experimental -> packages.server.src"
+      ],
+      "packages_checked": 89,
+      "packages_in_cycles": 30
+    },
+    {
+      "check_name": "unused_code_diagnostics",
+      "description": "Detects unused imports, variables, functions, and dead code via LSP diagnostics",
+      "languages": [
+        "javascript",
+        "typescript"
+      ],
+      "check_type": "standard",
+      "total_entities_checked": 10,
+      "findings_count": 10,
+      "warning_count": 0,
+      "score": 0.5,
+      "finding_groups": [
+        {
+          "severity": "info",
+          "threshold": 0,
+          "description": "Variables declared but never used",
+          "entities": [
+            {
+              "entity_name": "[unused_variable] '_exhaustiveCheck' is declared but its value is never read.",
+              "file_path": "packages/agent/src/proxy.ts",
+              "line_start": 388,
+              "line_end": 388,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'mergeOpenAICompletionsCompat' is declared but its value is never read.",
+              "file_path": "packages/ai/scripts/generate-models.ts",
+              "line_start": 813,
+              "line_end": 813,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] '_exhaustiveCheck' is declared but its value is never read.",
+              "file_path": "packages/coding-agent/src/core/messages.ts",
+              "line_start": 191,
+              "line_end": 191,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'agent' is declared but its value is never read.",
+              "file_path": "packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+              "line_start": 598,
+              "line_end": 598,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] '_exhaustive' is declared but its value is never read.",
+              "file_path": "packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+              "line_start": 3986,
+              "line_end": 3986,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] '_lastEventType' is declared but its value is never read.",
+              "file_path": "packages/tui/src/keys.ts",
+              "line_start": 536,
+              "line_end": 536,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'extractTextContent' is declared but its value is never read.",
+              "file_path": "scripts/read-tool-stats.mjs",
+              "line_start": 173,
+              "line_end": 173,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'match' is declared but its value is never read.",
+              "file_path": "scripts/release-notes.mjs",
+              "line_start": 230,
+              "line_end": 230,
+              "metric_value": 0.0
+            }
+          ]
+        },
+        {
+          "severity": "info",
+          "threshold": 0,
+          "description": "Unused import statements that should be removed",
+          "entities": [
+            {
+              "entity_name": "[unused_import] 'KnownProvider' is declared but never used.",
+              "file_path": "packages/ai/scripts/generate-models.ts",
+              "line_start": 24,
+              "line_end": 24,
+              "metric_value": 0.0
+            }
+          ]
+        },
+        {
+          "severity": "info",
+          "threshold": 0,
+          "description": "Code that cannot be reached during execution",
+          "entities": [
+            {
+              "entity_name": "[unreachable_code] Unreachable code detected.",
+              "file_path": "packages/coding-agent/src/core/compaction/compaction.ts",
+              "line_start": 348,
+              "line_end": 348,
+              "metric_value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "file_summaries": [
+    {
+      "file_path": "packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+      "total_findings": 9,
+      "warning_findings": 7,
+      "composite_risk_score": 85.0
+    },
+    {
+      "file_path": "packages/ai/scripts/generate-models.ts",
+      "total_findings": 5,
+      "warning_findings": 3,
+      "composite_risk_score": 65.0
+    },
+    {
+      "file_path": "packages/coding-agent/src/core/tools/grep.ts",
+      "total_findings": 4,
+      "warning_findings": 4,
+      "composite_risk_score": 60.0
+    },
+    {
+      "file_path": "packages/coding-agent/src/core/tools/find.ts",
+      "total_findings": 4,
+      "warning_findings": 4,
+      "composite_risk_score": 60.0
+    },
+    {
+      "file_path": "packages/ai/src/api/openai-completions.ts",
+      "total_findings": 3,
+      "warning_findings": 3,
+      "composite_risk_score": 45.0
+    },
+    {
+      "file_path": "packages/ai/src/api/anthropic-messages.ts",
+      "total_findings": 3,
+      "warning_findings": 3,
+      "composite_risk_score": 45.0
+    },
+    {
+      "file_path": "packages/coding-agent/src/core/export-html/template.js",
+      "total_findings": 2,
+      "warning_findings": 2,
+      "composite_risk_score": 30.0
+    },
+    {
+      "file_path": "packages/coding-agent/src/extensions/mcp/index.ts",
+      "total_findings": 2,
+      "warning_findings": 2,
+      "composite_risk_score": 30.0
+    },
+    {
+      "file_path": "packages/ai/src/api/openai-responses-shared.ts",
+      "total_findings": 2,
+      "warning_findings": 2,
+      "composite_risk_score": 30.0
+    },
+    {
+      "file_path": "packages/coding-agent/src/package-manager-cli.ts",
+      "total_findings": 2,
+      "warning_findings": 2,
+      "composite_risk_score": 30.0
+    },
+    {
+      "file_path": "packages/ai/src/api/bedrock-converse-stream.ts",
+      "total_findings": 2,
+      "warning_findings": 2,
+      "composite_risk_score": 30.0
+    },
+    {
+      "file_path": "packages/coding-agent/src/cli/args.ts",
+      "total_findings": 2,
+      "warning_findings": 2,
+      "composite_risk_score": 30.0
+    },
+    {
+      "file_path": "packages/tui/src/components/markdown.ts",
+      "total_findings": 2,
+      "warning_findings": 2,
+      "composite_risk_score": 30.0
+    },
+    {
+      "file_path": "packages/coding-agent/src/core/tools/bash.ts",
+      "total_findings": 2,
+      "warning_findings": 2,
+      "composite_risk_score": 30.0
+    },
+    {
+      "file_path": "packages/tui/src/keys.ts",
+      "total_findings": 2,
+      "warning_findings": 1,
+      "composite_risk_score": 25.0
+    },
+    {
+      "file_path": "packages/coding-agent/src/modes/rpc/rpc-mode.ts",
+      "total_findings": 1,
+      "warning_findings": 1,
+      "composite_risk_score": 15.0
+    },
+    {
+      "file_path": "packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+      "total_findings": 1,
+      "warning_findings": 1,
+      "composite_risk_score": 15.0
+    },
+    {
+      "file_path": "packages/coding-agent/src/main.ts",
+      "total_findings": 1,
+      "warning_findings": 1,
+      "composite_risk_score": 15.0
+    },
+    {
+      "file_path": "packages/tui/src/tui-main-screen.ts",
+      "total_findings": 1,
+      "warning_findings": 1,
+      "composite_risk_score": 15.0
+    },
+    {
+      "file_path": "packages/coding-agent/src/core/extensions/loader.ts",
+      "total_findings": 1,
+      "warning_findings": 1,
+      "composite_risk_score": 15.0
+    }
+  ]
+}
