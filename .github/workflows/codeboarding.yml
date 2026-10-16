@@ -36,7 +36,7 @@ jobs:
       id-token: write       # mint a GitHub OIDC token for the free hosted tier (write is the only level for id-token)
       actions: read         # let a repeat review download the analysis an earlier run published, instead of re-deriving the whole PR
     steps:
-      - uses: CodeBoarding/CodeBoarding-action@c38900c59bf4a2f4eb2b2b7ed971a1da474ef988
+      - uses: CodeBoarding/CodeBoarding-action@v1
         with:
           # CodeBoarding's free hosted tier. No secret to add: the run authenticates
           # with the GitHub OIDC token that `id-token: write` above grants.
@@ -51,7 +51,7 @@ jobs:
       actions: read         # continue from an analysis an earlier run published
       id-token: write       # identifies this repo to CodeBoarding's hosted tier
     steps:
-      - uses: CodeBoarding/CodeBoarding-action@c38900c59bf4a2f4eb2b2b7ed971a1da474ef988
+      - uses: CodeBoarding/CodeBoarding-action@v1
         with:
           mode: sync
           # CodeBoarding's free hosted tier. No secret to add: the run authenticates
