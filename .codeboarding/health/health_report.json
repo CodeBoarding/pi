@@ -1,0 +1,768 @@
+{
+  "repository_name": ".codeboarding-target",
+  "timestamp": "2026-10-16T15:47:21.966241+00:00",
+  "overall_score": 0.9917725173210161,
+  "check_summaries": [
+    {
+      "check_name": "function_size",
+      "description": "Checks that functions/methods do not exceed line count thresholds",
+      "languages": [
+        "javascript",
+        "typescript"
+      ],
+      "check_type": "standard",
+      "total_entities_checked": 8655,
+      "findings_count": 70,
+      "warning_count": 70,
+      "score": 0.9919121894858464,
+      "finding_groups": [
+        {
+          "severity": "warning",
+          "threshold": 150,
+          "description": "Functions exceeding 150.0 lines",
+          "entities": [
+            {
+              "entity_name": "packages.coding-agent.src.core.export-html.template.<function>",
+              "file_path": "packages/coding-agent/src/core/export-html/template.js",
+              "line_start": 1,
+              "line_end": 1923,
+              "metric_value": 1922
+            },
+            {
+              "entity_name": "packages.coding-agent.src.extensions.mcp.index.createMcpExtension",
+              "file_path": "packages/coding-agent/src/extensions/mcp/index.ts",
+              "line_start": 279,
+              "line_end": 1341,
+              "metric_value": 1062
+            },
+            {
+              "entity_name": "packages.coding-agent.src.extensions.mcp.index.createMcpExtension.<function>",
+              "file_path": "packages/coding-agent/src/extensions/mcp/index.ts",
+              "line_start": 280,
+              "line_end": 1340,
+              "metric_value": 1060
+            },
+            {
+              "entity_name": "packages.ai.scripts.generate-models.generateModels",
+              "file_path": "packages/ai/scripts/generate-models.ts",
+              "line_start": 2753,
+              "line_end": 3640,
+              "metric_value": 887
+            },
+            {
+              "entity_name": "packages.ai.scripts.generate-models.loadModelsDevData",
+              "file_path": "packages/ai/scripts/generate-models.ts",
+              "line_start": 1832,
+              "line_end": 2627,
+              "metric_value": 795
+            },
+            {
+              "entity_name": "packages.coding-agent.src.modes.rpc.rpc-mode.runRpcMode",
+              "file_path": "packages/coding-agent/src/modes/rpc/rpc-mode.ts",
+              "line_start": 54,
+              "line_end": 819,
+              "metric_value": 765
+            },
+            {
+              "entity_name": "packages.coding-agent.src.modes.interactive.components.settings-selector.SettingsSelectorComponent.constructor",
+              "file_path": "packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+              "line_start": 471,
+              "line_end": 1004,
+              "metric_value": 533
+            },
+            {
+              "entity_name": "packages.coding-agent.src.main.main",
+              "file_path": "packages/coding-agent/src/main.ts",
+              "line_start": 574,
+              "line_end": 1000,
+              "metric_value": 426
+            },
+            {
+              "entity_name": "packages.ai.src.api.openai-completions.stream.<function>",
+              "file_path": "packages/ai/src/api/openai-completions.ts",
+              "line_start": 312,
+              "line_end": 733,
+              "metric_value": 421
+            },
+            {
+              "entity_name": "packages.coding-agent.src.modes.interactive.interactive-mode.InteractiveMode.handleEvent",
+              "file_path": "packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+              "line_start": 3408,
+              "line_end": 3806,
+              "metric_value": 398
+            },
+            {
+              "entity_name": "packages.tui.src.keys.matchesKey",
+              "file_path": "packages/tui/src/keys.ts",
+              "line_start": 859,
+              "line_end": 1245,
+              "metric_value": 386
+            },
+            {
+              "entity_name": "packages.tui.src.tui-main-screen.TuiMainScreen.doRender",
+              "file_path": "packages/tui/src/tui-main-screen.ts",
+              "line_start": 247,
+              "line_end": 617,
+              "metric_value": 370
+            },
+            {
+              "entity_name": "packages.ai.src.api.anthropic-messages.stream.<function>",
+              "file_path": "packages/ai/src/api/anthropic-messages.ts",
+              "line_start": 584,
+              "line_end": 934,
+              "metric_value": 350
+            },
+            {
+              "entity_name": "packages.ai.src.api.openai-responses-shared.processResponsesStream",
+              "file_path": "packages/ai/src/api/openai-responses-shared.ts",
+              "line_start": 458,
+              "line_end": 802,
+              "metric_value": 344
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.extensions.loader.createExtensionAPI",
+              "file_path": "packages/coding-agent/src/core/extensions/loader.ts",
+              "line_start": 244,
+              "line_end": 549,
+              "metric_value": 305
+            },
+            {
+              "entity_name": "packages.tui.src.components.editor.Editor.handleInput",
+              "file_path": "packages/tui/src/components/editor.ts",
+              "line_start": 696,
+              "line_end": 996,
+              "metric_value": 300
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.sdk.createAgentSession",
+              "file_path": "packages/coding-agent/src/core/sdk.ts",
+              "line_start": 191,
+              "line_end": 487,
+              "metric_value": 296
+            },
+            {
+              "entity_name": "packages.ai.src.api.openai-completions.convertMessages",
+              "file_path": "packages/ai/src/api/openai-completions.ts",
+              "line_start": 1195,
+              "line_end": 1482,
+              "metric_value": 287
+            },
+            {
+              "entity_name": "scripts.session-transcripts.main",
+              "file_path": "scripts/session-transcripts.ts",
+              "line_start": 143,
+              "line_end": 404,
+              "metric_value": 261
+            },
+            {
+              "entity_name": "packages.coding-agent.src.package-manager-cli.handlePackageCommand",
+              "file_path": "packages/coding-agent/src/package-manager-cli.ts",
+              "line_start": 890,
+              "line_end": 1141,
+              "metric_value": 251
+            },
+            {
+              "entity_name": "packages.ai.src.api.openai-codex-responses.stream.<function>",
+              "file_path": "packages/ai/src/api/openai-codex-responses.ts",
+              "line_start": 246,
+              "line_end": 496,
+              "metric_value": 250
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.tools.grep.createGrepToolDefinition",
+              "file_path": "packages/coding-agent/src/core/tools/grep.ts",
+              "line_start": 70,
+              "line_end": 319,
+              "metric_value": 249
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.tools.find.createFindToolDefinition",
+              "file_path": "packages/coding-agent/src/core/tools/find.ts",
+              "line_start": 70,
+              "line_end": 314,
+              "metric_value": 244
+            },
+            {
+              "entity_name": "packages.ai.src.providers.faux.createFauxCore",
+              "file_path": "packages/ai/src/providers/faux.ts",
+              "line_start": 454,
+              "line_end": 692,
+              "metric_value": 238
+            },
+            {
+              "entity_name": "packages.coding-agent.src.modes.interactive.interactive-mode.InteractiveMode.showSettingsSelector",
+              "file_path": "packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+              "line_start": 4923,
+              "line_end": 5161,
+              "metric_value": 238
+            },
+            {
+              "entity_name": "packages.coding-agent.src.modes.interactive.interactive-mode.InteractiveMode.showSettingsSelector.showSelector() callback",
+              "file_path": "packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+              "line_start": 4924,
+              "line_end": 5160,
+              "metric_value": 236
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.tools.grep.createGrepToolDefinition.execute",
+              "file_path": "packages/coding-agent/src/core/tools/grep.ts",
+              "line_start": 81,
+              "line_end": 316,
+              "metric_value": 235
+            },
+            {
+              "entity_name": "packages.ai.src.api.google-generative-ai.stream.<function>",
+              "file_path": "packages/ai/src/api/google-generative-ai.ts",
+              "line_start": 67,
+              "line_end": 300,
+              "metric_value": 233
+            },
+            {
+              "entity_name": "packages.ai.src.api.google-vertex.stream.<function>",
+              "file_path": "packages/ai/src/api/google-vertex.ts",
+              "line_start": 76,
+              "line_end": 308,
+              "metric_value": 232
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.tools.find.createFindToolDefinition.execute",
+              "file_path": "packages/coding-agent/src/core/tools/find.ts",
+              "line_start": 81,
+              "line_end": 311,
+              "metric_value": 230
+            },
+            {
+              "entity_name": "packages.durable.src.storage.jsonl.storage.JsonlStorage.recover",
+              "file_path": "packages/durable/src/storage/jsonl/storage.ts",
+              "line_start": 535,
+              "line_end": 765,
+              "metric_value": 230
+            },
+            {
+              "entity_name": "packages.ai.src.api.bedrock-converse-stream.stream.<function>",
+              "file_path": "packages/ai/src/api/bedrock-converse-stream.ts",
+              "line_start": 136,
+              "line_end": 360,
+              "metric_value": 224
+            },
+            {
+              "entity_name": "packages.ai.src.api.openai-responses-shared.convertResponsesMessages",
+              "file_path": "packages/ai/src/api/openai-responses-shared.ts",
+              "line_start": 156,
+              "line_end": 379,
+              "metric_value": 223
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.tools.find.createFindToolDefinition.execute.<function>",
+              "file_path": "packages/coding-agent/src/core/tools/find.ts",
+              "line_start": 88,
+              "line_end": 310,
+              "metric_value": 222
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.tools.grep.createGrepToolDefinition.execute.<function>",
+              "file_path": "packages/coding-agent/src/core/tools/grep.ts",
+              "line_start": 104,
+              "line_end": 315,
+              "metric_value": 211
+            },
+            {
+              "entity_name": "packages.ai.src.api.openai-completions.buildParams",
+              "file_path": "packages/ai/src/api/openai-completions.ts",
+              "line_start": 804,
+              "line_end": 1012,
+              "metric_value": 208
+            },
+            {
+              "entity_name": "packages.coding-agent.src.cli.args.printHelp",
+              "file_path": "packages/coding-agent/src/cli/args.ts",
+              "line_start": 273,
+              "line_end": 479,
+              "metric_value": 206
+            },
+            {
+              "entity_name": "packages.ai.src.api.anthropic-messages.convertMessages",
+              "file_path": "packages/ai/src/api/anthropic-messages.ts",
+              "line_start": 1353,
+              "line_end": 1558,
+              "metric_value": 205
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.tools.find.createFindToolDefinition.execute.<function>.<function>",
+              "file_path": "packages/coding-agent/src/core/tools/find.ts",
+              "line_start": 109,
+              "line_end": 309,
+              "metric_value": 200
+            },
+            {
+              "entity_name": "packages.ai.src.api.mistral-conversations.consumeChatStream",
+              "file_path": "packages/ai/src/api/mistral-conversations.ts",
+              "line_start": 576,
+              "line_end": 775,
+              "metric_value": 199
+            },
+            {
+              "entity_name": "packages.coding-agent.src.cli.args.parseArgs",
+              "file_path": "packages/coding-agent/src/cli/args.ts",
+              "line_start": 72,
+              "line_end": 271,
+              "metric_value": 199
+            },
+            {
+              "entity_name": "packages.coding-agent.src.modes.interactive.interactive-mode.InteractiveMode.setupEditorSubmitHandler",
+              "file_path": "packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+              "line_start": 3201,
+              "line_end": 3400,
+              "metric_value": 199
+            },
+            {
+              "entity_name": "packages.coding-agent.src.package-manager-cli.parsePackageCommand",
+              "file_path": "packages/coding-agent/src/package-manager-cli.ts",
+              "line_start": 397,
+              "line_end": 595,
+              "metric_value": 198
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.tools.grep.createGrepToolDefinition.execute.<function>.<function>",
+              "file_path": "packages/coding-agent/src/core/tools/grep.ts",
+              "line_start": 117,
+              "line_end": 314,
+              "metric_value": 197
+            },
+            {
+              "entity_name": "packages.coding-agent.src.modes.interactive.interactive-mode.InteractiveMode.setupEditorSubmitHandler.onSubmit",
+              "file_path": "packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+              "line_start": 3202,
+              "line_end": 3399,
+              "metric_value": 197
+            },
+            {
+              "entity_name": "packages.evals.src.harness.runPiCodingAgent",
+              "file_path": "packages/evals/src/harness.ts",
+              "line_start": 272,
+              "line_end": 469,
+              "metric_value": 197
+            },
+            {
+              "entity_name": "packages.coding-agent.src.modes.interactive.interactive-mode.InteractiveMode.showLoadedResources",
+              "file_path": "packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+              "line_start": 1772,
+              "line_end": 1966,
+              "metric_value": 194
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.agent-session.AgentSession.navigateTree",
+              "file_path": "packages/coding-agent/src/core/agent-session.ts",
+              "line_start": 3994,
+              "line_end": 4186,
+              "metric_value": 192
+            },
+            {
+              "entity_name": "packages.durable.src.harness.events.translate",
+              "file_path": "packages/durable/src/harness/events.ts",
+              "line_start": 227,
+              "line_end": 418,
+              "metric_value": 191
+            },
+            {
+              "entity_name": "packages.coding-agent.src.extensions.llama.index.llamaExtension",
+              "file_path": "packages/coding-agent/src/extensions/llama/index.ts",
+              "line_start": 42,
+              "line_end": 230,
+              "metric_value": 188
+            },
+            {
+              "entity_name": "packages.durable.src.harness.scheduler.TaskScheduler.#runtime",
+              "file_path": "packages/durable/src/harness/scheduler.ts",
+              "line_start": 1590,
+              "line_end": 1778,
+              "metric_value": 188
+            },
+            {
+              "entity_name": "packages.coding-agent.src.modes.interactive.interactive-mode.InteractiveMode.init",
+              "file_path": "packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+              "line_start": 943,
+              "line_end": 1127,
+              "metric_value": 184
+            },
+            {
+              "entity_name": "packages.ai.scripts.generate-models.applyThinkingLevelMetadata",
+              "file_path": "packages/ai/scripts/generate-models.ts",
+              "line_start": 1077,
+              "line_end": 1259,
+              "metric_value": 182
+            },
+            {
+              "entity_name": "packages.codemode.src.runtime.vm.startVm",
+              "file_path": "packages/codemode/src/runtime/vm.ts",
+              "line_start": 160,
+              "line_end": 341,
+              "metric_value": 181
+            },
+            {
+              "entity_name": "packages.tui.src.components.markdown.Markdown.renderToken",
+              "file_path": "packages/tui/src/components/markdown.ts",
+              "line_start": 464,
+              "line_end": 642,
+              "metric_value": 178
+            },
+            {
+              "entity_name": "packages.tui.src.latex.LatexParser.parseCommand",
+              "file_path": "packages/tui/src/latex.ts",
+              "line_start": 1014,
+              "line_end": 1192,
+              "metric_value": 178
+            },
+            {
+              "entity_name": "packages.ai.src.api.anthropic-messages.buildParams",
+              "file_path": "packages/ai/src/api/anthropic-messages.ts",
+              "line_start": 1160,
+              "line_end": 1332,
+              "metric_value": 172
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.tools.bash.createShellToolDefinition",
+              "file_path": "packages/coding-agent/src/core/tools/bash.ts",
+              "line_start": 243,
+              "line_end": 415,
+              "metric_value": 172
+            },
+            {
+              "entity_name": "packages.tui.src.components.markdown.Markdown.renderTable",
+              "file_path": "packages/tui/src/components/markdown.ts",
+              "line_start": 852,
+              "line_end": 1024,
+              "metric_value": 172
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.export-html.template.<function>.renderToolCall",
+              "file_path": "packages/coding-agent/src/core/export-html/template.js",
+              "line_start": 918,
+              "line_end": 1089,
+              "metric_value": 171
+            },
+            {
+              "entity_name": "packages.ai.src.api.bedrock-converse-stream.convertMessages",
+              "file_path": "packages/ai/src/api/bedrock-converse-stream.ts",
+              "line_start": 976,
+              "line_end": 1145,
+              "metric_value": 169
+            },
+            {
+              "entity_name": "packages.durable.src.harness.tool.run",
+              "file_path": "packages/durable/src/harness/tool.ts",
+              "line_start": 269,
+              "line_end": 435,
+              "metric_value": 166
+            },
+            {
+              "entity_name": "packages.ai.src.api.transform-messages.transformMessages",
+              "file_path": "packages/ai/src/api/transform-messages.ts",
+              "line_start": 91,
+              "line_end": 256,
+              "metric_value": 165
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.resource-loader.DefaultResourceLoader.reload",
+              "file_path": "packages/coding-agent/src/core/resource-loader.ts",
+              "line_start": 513,
+              "line_end": 678,
+              "metric_value": 165
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.package-manager.DefaultPackageManager.addAutoDiscoveredResources",
+              "file_path": "packages/coding-agent/src/core/package-manager.ts",
+              "line_start": 2419,
+              "line_end": 2583,
+              "metric_value": 164
+            },
+            {
+              "entity_name": "packages.tui.src.components.input.Input.handleInput",
+              "file_path": "packages/tui/src/components/input.ts",
+              "line_start": 71,
+              "line_end": 234,
+              "metric_value": 163
+            },
+            {
+              "entity_name": "packages.agent.src.agent-loop.runLoop",
+              "file_path": "packages/agent/src/agent-loop.ts",
+              "line_start": 163,
+              "line_end": 321,
+              "metric_value": 158
+            },
+            {
+              "entity_name": "packages.coding-agent.src.modes.interactive.components.easter-egg-3d.EasterEgg3dAnimation.render",
+              "file_path": "packages/coding-agent/src/modes/interactive/components/easter-egg-3d.ts",
+              "line_start": 950,
+              "line_end": 1108,
+              "metric_value": 158
+            },
+            {
+              "entity_name": "packages.ai.src.api.google-shared.convertMessages",
+              "file_path": "packages/ai/src/api/google-shared.ts",
+              "line_start": 193,
+              "line_end": 345,
+              "metric_value": 152
+            },
+            {
+              "entity_name": "packages.coding-agent.src.core.tools.bash.createShellToolDefinition.execute",
+              "file_path": "packages/coding-agent/src/core/tools/bash.ts",
+              "line_start": 261,
+              "line_end": 412,
+              "metric_value": 151
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "check_name": "circular_dependencies",
+      "description": "Detects circular dependencies between packages",
+      "languages": [
+        "javascript",
+        "typescript"
+      ],
+      "check_type": "circular_dependencies",
+      "cycles": [
+        "packages.chord.src -> packages.chord.src.delta -> packages.chord.src",
+        "packages.chord.src -> packages.durable.src.session -> packages.chord.src",
+        "packages.chord.src -> packages.durable.src.session -> packages.chord.src.delta -> packages.chord.src",
+        "packages.chord.src -> packages.durable.src.session -> packages.durable.src -> packages.chord.src",
+        "packages.chord.src -> packages.durable.src.session -> packages.durable.src.harness -> packages.chord.src",
+        "packages.chord.src -> packages.durable.src.session -> packages.durable.src.harness -> packages.chord.src.delta -> packages.chord.src",
+        "packages.chord.src -> packages.durable.src.session -> packages.durable.src.harness -> packages.durable.src -> packages.chord.src",
+        "packages.chord.src -> packages.durable.src.session -> packages.durable.src.harness -> packages.durable.src.storage -> packages.chord.src.delta -> packages.chord.src",
+        "packages.chord.src -> packages.durable.src.session -> packages.durable.src.harness -> packages.durable.src.storage -> packages.durable.src -> packages.chord.src",
+        "packages.chord.src -> packages.durable.src.session -> packages.durable.src.harness -> packages.durable.src.storage.jsonl -> packages.durable.src -> packages.chord.src",
+        "packages.chord.src -> packages.durable.src.session -> packages.durable.src.harness -> packages.durable.src.storage.jsonl -> packages.durable.src.storage -> packages.chord.src.delta -> packages.chord.src",
+        "packages.chord.src -> packages.durable.src.session -> packages.durable.src.harness -> packages.durable.src.storage.jsonl -> packages.durable.src.storage -> packages.durable.src -> packages.chord.src",
+        "packages.chord.src -> packages.durable.src.session -> packages.durable.src.harness -> packages.durable.src.storage.sqlite -> packages.chord.src.delta -> packages.chord.src",
+        "packages.chord.src -> packages.durable.src.session -> packages.durable.src.harness -> packages.durable.src.storage.sqlite -> packages.durable.src -> packages.chord.src",
+        "packages.chord.src -> packages.durable.src.session -> packages.durable.src.harness -> packages.durable.src.storage.sqlite -> packages.durable.src.storage -> packages.chord.src.delta -> packages.chord.src",
+        "packages.chord.src -> packages.durable.src.session -> packages.durable.src.harness -> packages.durable.src.storage.sqlite -> packages.durable.src.storage -> packages.durable.src -> packages.chord.src",
+        "packages.chord.src -> packages.durable.src.session -> packages.durable.src.storage -> packages.chord.src.delta -> packages.chord.src",
+        "packages.chord.src -> packages.durable.src.session -> packages.durable.src.storage -> packages.durable.src -> packages.chord.src",
+        "packages.chord.src -> packages.durable.src.session -> packages.durable.src.storage.jsonl -> packages.durable.src -> packages.chord.src",
+        "packages.chord.src -> packages.durable.src.session -> packages.durable.src.storage.jsonl -> packages.durable.src.storage -> packages.chord.src.delta -> packages.chord.src",
+        "packages.chord.src -> packages.durable.src.session -> packages.durable.src.storage.jsonl -> packages.durable.src.storage -> packages.durable.src -> packages.chord.src",
+        "packages.chord.src -> packages.durable.src.session -> packages.durable.src.storage.sqlite -> packages.chord.src.delta -> packages.chord.src",
+        "packages.chord.src -> packages.durable.src.session -> packages.durable.src.storage.sqlite -> packages.durable.src -> packages.chord.src",
+        "packages.chord.src -> packages.durable.src.session -> packages.durable.src.storage.sqlite -> packages.durable.src.storage -> packages.chord.src.delta -> packages.chord.src",
+        "packages.chord.src -> packages.durable.src.session -> packages.durable.src.storage.sqlite -> packages.durable.src.storage -> packages.durable.src -> packages.chord.src",
+        "packages.durable.src.session -> packages.durable.src.harness -> packages.durable.src.session",
+        "packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.interactive.theme",
+        "packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.rpc -> packages.coding-agent.src.modes -> packages.coding-agent.src.utils -> packages.tui.src -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.modes.interactive.theme",
+        "packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.rpc -> packages.coding-agent.src.modes -> packages.coding-agent.src.utils -> packages.tui.src -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.modes.interactive.theme",
+        "packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.rpc -> packages.coding-agent.src.modes -> packages.coding-agent.src.utils -> packages.tui.src -> packages.coding-agent.src.extensions.mcp -> packages.tui.src.components -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.modes.interactive.theme",
+        "packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.rpc -> packages.coding-agent.src.modes -> packages.coding-agent.src.utils -> packages.tui.src -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.modes.interactive.theme",
+        "packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.rpc -> packages.coding-agent.src.modes -> packages.coding-agent.src.utils -> packages.tui.src -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.modes.interactive.theme",
+        "packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.rpc -> packages.coding-agent.src.modes -> packages.coding-agent.src.utils -> packages.tui.src -> packages.coding-agent.src.modes.interactive.components -> packages.tui.src.components -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.modes.interactive.theme",
+        "packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.rpc -> packages.coding-agent.src.modes -> packages.coding-agent.src.utils -> packages.tui.src -> packages.tui.src.components -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.modes.interactive.theme",
+        "packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.rpc -> packages.coding-agent.src.modes -> packages.coding-agent.src.utils -> packages.tui.src -> packages.tui.src.components -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.modes.interactive.theme",
+        "packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.rpc -> packages.coding-agent.src.modes -> packages.coding-agent.src.utils -> packages.tui.src -> packages.tui.src.components -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.modes.interactive.theme",
+        "packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.rpc -> packages.coding-agent.src.modes -> packages.coding-agent.src.utils -> packages.tui.src -> packages.tui.src.components -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.modes.interactive.theme",
+        "packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.rpc -> packages.coding-agent.src.modes -> packages.coding-agent.src.utils -> packages.tui.src.components -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.modes.interactive.theme",
+        "packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.rpc -> packages.coding-agent.src.modes -> packages.coding-agent.src.utils -> packages.tui.src.components -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.modes.interactive.theme",
+        "packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.rpc -> packages.coding-agent.src.modes -> packages.coding-agent.src.utils -> packages.tui.src.components -> packages.coding-agent.src.extensions.mcp -> packages.tui.src -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.modes.interactive.theme",
+        "packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.rpc -> packages.coding-agent.src.modes -> packages.coding-agent.src.utils -> packages.tui.src.components -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.modes.interactive.theme",
+        "packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.rpc -> packages.coding-agent.src.modes -> packages.coding-agent.src.utils -> packages.tui.src.components -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.modes.interactive.theme",
+        "packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.rpc -> packages.coding-agent.src.modes -> packages.coding-agent.src.utils -> packages.tui.src.components -> packages.coding-agent.src.modes.interactive.components -> packages.tui.src -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.modes.interactive.theme",
+        "packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.rpc -> packages.coding-agent.src.modes -> packages.coding-agent.src.utils -> packages.tui.src.components -> packages.tui.src -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.modes.interactive.theme",
+        "packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.rpc -> packages.coding-agent.src.modes -> packages.coding-agent.src.utils -> packages.tui.src.components -> packages.tui.src -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.modes.interactive.theme",
+        "packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.rpc -> packages.coding-agent.src.modes -> packages.coding-agent.src.utils -> packages.tui.src.components -> packages.tui.src -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.modes.interactive.theme",
+        "packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.rpc -> packages.coding-agent.src.modes -> packages.coding-agent.src.utils -> packages.tui.src.components -> packages.tui.src -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.modes.interactive.theme",
+        "packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.rpc -> packages.coding-agent.src.modes.interactive.theme",
+        "packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.rpc -> packages.coding-agent.src.utils -> packages.tui.src -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.modes.interactive.components -> packages.coding-agent.src.modes.interactive.theme",
+        "packages.coding-agent.src.modes.interactive.theme -> packages.coding-agent.src -> packages.ai.src -> packages.ai.src.api -> packages.ai.src.providers -> packages.ai.src.auth -> packages.ai.src.auth.oauth -> packages.coding-agent.src.modes.interactive -> packages.agent.src -> packages.coding-agent.src.core -> packages.coding-agent.src.cli -> packages.coding-agent.src.core.tools -> packages.coding-agent.src.core.extensions -> packages.coding-agent.src.modes.rpc -> packages.coding-agent.src.utils -> packages.tui.src -> packages.coding-agent.src.extensions.mcp -> packages.coding-agent.src.modes.interactive.theme"
+      ],
+      "packages_checked": 72,
+      "packages_in_cycles": 28
+    },
+    {
+      "check_name": "unused_code_diagnostics",
+      "description": "Detects unused imports, variables, functions, and dead code via LSP diagnostics",
+      "languages": [
+        "javascript",
+        "typescript"
+      ],
+      "check_type": "standard",
+      "total_entities_checked": 5,
+      "findings_count": 5,
+      "warning_count": 0,
+      "score": 0.75,
+      "finding_groups": [
+        {
+          "severity": "info",
+          "threshold": 0,
+          "description": "Variables declared but never used",
+          "entities": [
+            {
+              "entity_name": "[unused_variable] '_exhaustiveCheck' is declared but its value is never read.",
+              "file_path": "packages/agent/src/proxy.ts",
+              "line_start": 388,
+              "line_end": 388,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'mergeOpenAICompletionsCompat' is declared but its value is never read.",
+              "file_path": "packages/ai/scripts/generate-models.ts",
+              "line_start": 838,
+              "line_end": 838,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'extractTextContent' is declared but its value is never read.",
+              "file_path": "scripts/read-tool-stats.mjs",
+              "line_start": 173,
+              "line_end": 173,
+              "metric_value": 0.0
+            },
+            {
+              "entity_name": "[unused_variable] 'match' is declared but its value is never read.",
+              "file_path": "scripts/release-notes.mjs",
+              "line_start": 230,
+              "line_end": 230,
+              "metric_value": 0.0
+            }
+          ]
+        },
+        {
+          "severity": "info",
+          "threshold": 0,
+          "description": "Unused import statements that should be removed",
+          "entities": [
+            {
+              "entity_name": "[unused_import] 'KnownProvider' is declared but never used.",
+              "file_path": "packages/ai/scripts/generate-models.ts",
+              "line_start": 24,
+              "line_end": 24,
+              "metric_value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "file_summaries": [
+    {
+      "file_path": "packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+      "total_findings": 7,
+      "warning_findings": 7,
+      "composite_risk_score": 85.0
+    },
+    {
+      "file_path": "packages/ai/scripts/generate-models.ts",
+      "total_findings": 5,
+      "warning_findings": 3,
+      "composite_risk_score": 65.0
+    },
+    {
+      "file_path": "packages/coding-agent/src/core/tools/grep.ts",
+      "total_findings": 4,
+      "warning_findings": 4,
+      "composite_risk_score": 60.0
+    },
+    {
+      "file_path": "packages/coding-agent/src/core/tools/find.ts",
+      "total_findings": 4,
+      "warning_findings": 4,
+      "composite_risk_score": 60.0
+    },
+    {
+      "file_path": "packages/ai/src/api/openai-completions.ts",
+      "total_findings": 3,
+      "warning_findings": 3,
+      "composite_risk_score": 45.0
+    },
+    {
+      "file_path": "packages/ai/src/api/anthropic-messages.ts",
+      "total_findings": 3,
+      "warning_findings": 3,
+      "composite_risk_score": 45.0
+    },
+    {
+      "file_path": "packages/coding-agent/src/core/export-html/template.js",
+      "total_findings": 2,
+      "warning_findings": 2,
+      "composite_risk_score": 30.0
+    },
+    {
+      "file_path": "packages/coding-agent/src/extensions/mcp/index.ts",
+      "total_findings": 2,
+      "warning_findings": 2,
+      "composite_risk_score": 30.0
+    },
+    {
+      "file_path": "packages/ai/src/api/openai-responses-shared.ts",
+      "total_findings": 2,
+      "warning_findings": 2,
+      "composite_risk_score": 30.0
+    },
+    {
+      "file_path": "packages/coding-agent/src/package-manager-cli.ts",
+      "total_findings": 2,
+      "warning_findings": 2,
+      "composite_risk_score": 30.0
+    },
+    {
+      "file_path": "packages/ai/src/api/bedrock-converse-stream.ts",
+      "total_findings": 2,
+      "warning_findings": 2,
+      "composite_risk_score": 30.0
+    },
+    {
+      "file_path": "packages/coding-agent/src/cli/args.ts",
+      "total_findings": 2,
+      "warning_findings": 2,
+      "composite_risk_score": 30.0
+    },
+    {
+      "file_path": "packages/tui/src/components/markdown.ts",
+      "total_findings": 2,
+      "warning_findings": 2,
+      "composite_risk_score": 30.0
+    },
+    {
+      "file_path": "packages/coding-agent/src/core/tools/bash.ts",
+      "total_findings": 2,
+      "warning_findings": 2,
+      "composite_risk_score": 30.0
+    },
+    {
+      "file_path": "packages/coding-agent/src/modes/rpc/rpc-mode.ts",
+      "total_findings": 1,
+      "warning_findings": 1,
+      "composite_risk_score": 15.0
+    },
+    {
+      "file_path": "packages/coding-agent/src/modes/interactive/components/settings-selector.ts",
+      "total_findings": 1,
+      "warning_findings": 1,
+      "composite_risk_score": 15.0
+    },
+    {
+      "file_path": "packages/coding-agent/src/main.ts",
+      "total_findings": 1,
+      "warning_findings": 1,
+      "composite_risk_score": 15.0
+    },
+    {
+      "file_path": "packages/tui/src/keys.ts",
+      "total_findings": 1,
+      "warning_findings": 1,
+      "composite_risk_score": 15.0
+    },
+    {
+      "file_path": "packages/tui/src/tui-main-screen.ts",
+      "total_findings": 1,
+      "warning_findings": 1,
+      "composite_risk_score": 15.0
+    },
+    {
+      "file_path": "packages/coding-agent/src/core/extensions/loader.ts",
+      "total_findings": 1,
+      "warning_findings": 1,
+      "composite_risk_score": 15.0
+    }
+  ]
+}
