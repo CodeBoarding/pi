@@ -16,7 +16,6 @@ import {
 	validateToolArguments,
 } from "@earendil-works/pi-ai";
 import { getDefaultStreamFn } from "./stream-fn.ts";
-import { recordToolCall } from "./tool-call-stats.ts";
 import type {
 	AgentContext,
 	AgentEvent,
@@ -270,7 +269,6 @@ async function runLoop(
 						? await failToolCallsFromTruncatedMessage(toolCalls, emit)
 						: await executeToolCalls(currentContext, message, config, signal, emit);
 				toolResults.push(...executedToolBatch.messages);
-				for (const result of executedToolBatch.messages) recordToolCall(result.toolName, result.isError);
 				hasMoreToolCalls = !executedToolBatch.terminate;
 
 				for (const result of toolResults) {
