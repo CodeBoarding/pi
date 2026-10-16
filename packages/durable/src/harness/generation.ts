@@ -21,12 +21,13 @@ import type {
 	NextTaskState,
 	SubmissionId,
 	TaskId,
+	TaskOutcome,
 	TaskRuntime,
 	Tx,
 	TypedEntry,
 } from "../types.ts";
 import { addTools } from "./agent.ts";
-import { createCompaction, estimateContext, selectCut } from "./compaction.ts";
+import { compactionPolicy, createCompaction, estimateContext, selectCut } from "./compaction.ts";
 import { applyBoundary, prepareBoundary } from "./inbox.ts";
 import { assignJson } from "./json.ts";
 import { endRun, LiveDoc, type LiveState, type ToolSlot } from "./live.ts";
@@ -56,6 +57,8 @@ export type GenerationCheckpoint =
 			compacted?: TaskId<CompactionResult>;
 			/** Error text of the overflow that started `compacted`; checked once when `prepare` resumes. */
 			overflow?: string;
+			/** Set when the blocking threshold started `compacted`; its outcome is checked once when `prepare` resumes. */
+			threshold?: true;
 	  }
 	| {
 			phase: "request";
@@ -119,8 +122,9 @@ export const GenerationTask = defineTask<GenerationInput, GenerationCheckpoint, 
 	phases: {
 		/**
 		 * Render the system prompt and tool loadout and append the positional `pi.system` entries they need, then move to
-		 * `request`. The agent and settings resolved here are fixed for this request. Only the Harness writes to a busy
-		 * conversation, so the transcript read here is still the tail at the commit.
+		 * `request`. The agent and settings resolved here are fixed for this request. Only the Harness writes model
+		 * context to a busy conversation, so the context read here is still current at the commit; display-only entries
+		 * may land meanwhile.
 		 */
 		prepare: async (task, runtime, context) => {
 			const { conversationId } = runtime;
@@ -129,11 +133,19 @@ export const GenerationTask = defineTask<GenerationInput, GenerationCheckpoint, 
 			const { model, thinkingLevel } = agent;
 			const resolved = model === undefined ? undefined : runtime.models.getModel(model.provider, model.modelId);
 			if (model === undefined || resolved === undefined) return failNoModel(runtime, model, context);
-			const { attempt, compacted, overflow } = task.state.checkpoint;
+			const { attempt, compacted, overflow, threshold: blocked } = task.state.checkpoint;
 			if (compacted !== undefined && overflow !== undefined) {
 				const [outcome] = await runtime.outcomes([compacted], context);
 				if (outcome?.status !== "completed" || outcome.result.entryId === undefined) {
 					return failModelError(runtime, overflow, context);
+				}
+			}
+			// A threshold compaction that found nothing to compact or was declined leaves a request that may still fit. One
+			// that failed left a context it judged too large: sending it would at best leave no room for the answer.
+			if (compacted !== undefined && blocked === true) {
+				const [outcome] = await runtime.outcomes([compacted], context);
+				if (outcome !== undefined && outcome.status !== "completed") {
+					return failModelError(runtime, compactionFailure(outcome), context);
 				}
 			}
 			const view = await runtime.context(conversationId, context);
@@ -151,13 +163,13 @@ export const GenerationTask = defineTask<GenerationInput, GenerationCheckpoint, 
 			const entries = planSystemEntries(view, desired, agent.tools, runtime.now());
 			const threshold =
 				compacted === undefined
-					? thresholdCompaction(view, entries, resolved.contextWindow, settings.compaction)
+					? thresholdCompaction(view, entries, resolved.contextWindow, compactionPolicy(settings, model))
 					: undefined;
 			if (threshold === "blocking") {
 				// Compact first and prepare again; the transcript is unchanged until the compaction appends.
 				await runtime.commit(async (tx): Promise<Next> => {
 					const child = await createCompaction(tx, conversationId, { reason: "threshold" }, runtime.taskId);
-					const checkpoint = { phase: "prepare", attempt, compacted: child } as const;
+					const checkpoint = { phase: "prepare", attempt, compacted: child, threshold: true } as const;
 					return { status: "waiting", checkpoint, on: [child], policy: "allSettled" };
 				}, context);
 				return;
@@ -326,6 +338,19 @@ function thresholdCompaction(
 	return over;
 }
 
+/** Error text for a generation whose blocking compaction ended without completing. */
+function compactionFailure(outcome: Exclude<TaskOutcome<CompactionResult>, { status: "completed" }>): string {
+	switch (outcome.status) {
+		case "failed":
+		case "faulted":
+			return `Compaction failed: ${outcome.error.message}`;
+		case "orphaned":
+			return `Compaction failed: ${outcome.reason}`;
+		case "aborted":
+			return "Compaction was aborted";
+	}
+}
+
 /** Settle the run's inputs `unanswered` with `model_error` and fail with `text`. */
 async function failModelError(runtime: Runtime, text: string, context: Context): Promise<void> {
 	await runtime.commit(async (tx) => {
@@ -462,10 +487,10 @@ async function classify(
 	// The retry and compaction policies govern the next attempt, so they are read now rather than pinned at preparation.
 	const settings = runtime.settings;
 	const overflow = message.stopReason === "error" && isContextOverflow(message);
-	if (overflow && compacted === undefined && settings.compaction.enabled) {
-		const policy = settings.compaction;
+	const compaction = compactionPolicy(settings, ref);
+	if (overflow && compacted === undefined && compaction.enabled) {
 		const view = await runtime.context(conversationId, context, { at: cutoff });
-		if (selectCut(view, policy.keepRecentTokens) !== undefined) {
+		if (selectCut(view, compaction.keepRecentTokens) !== undefined) {
 			const text = message.errorMessage ?? "Context overflow";
 			await runtime.commit(async (tx): Promise<Next> => {
 				const live = await tx.doc(LiveDoc, conversationId);
