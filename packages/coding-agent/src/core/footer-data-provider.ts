@@ -2,6 +2,7 @@ import { type ExecFileException, execFile, spawnSync } from "child_process";
 import { existsSync, type FSWatcher, readFileSync, type Stats, statSync, unwatchFile, watchFile } from "fs";
 import { dirname, join, resolve } from "path";
 import { closeWatcher, FS_WATCH_RETRY_DELAY_MS, watchWithErrorHandler } from "../utils/fs-watch.ts";
+import { linkedWorktreeName } from "./git-worktree.ts";
 
 export type GitPaths = {
 	repoDir: string;
@@ -129,6 +130,11 @@ export class FooterDataProvider {
 			this.cachedBranch = this.resolveGitBranchSync();
 		}
 		return this.cachedBranch;
+	}
+
+	/** Linked worktree name, null in the main checkout or outside a repo */
+	getWorktreeName(): string | null {
+		return this.gitPaths ? linkedWorktreeName(this.gitPaths) : null;
 	}
 
 	/** Extension status texts set via ctx.ui.setStatus() */
@@ -384,5 +390,5 @@ export class FooterDataProvider {
 /** Read-only view for extensions - excludes setExtensionStatus, setAvailableProviderCount and dispose */
 export type ReadonlyFooterDataProvider = Pick<
 	FooterDataProvider,
-	"getGitBranch" | "getExtensionStatuses" | "getAvailableProviderCount" | "onBranchChange"
+	"getGitBranch" | "getWorktreeName" | "getExtensionStatuses" | "getAvailableProviderCount" | "onBranchChange"
 >;
