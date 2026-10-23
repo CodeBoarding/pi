@@ -280,4 +280,12 @@ describe("FooterComponent width handling", () => {
 		expect(stats).toContain("$1.234");
 		expect(stats).not.toContain("(sub)");
 	});
+
+	it("names the linked worktree beside the branch", () => {
+		const session = createSession({ sessionName: "" });
+		expect(stripAnsi(new FooterComponent(session, createFooterData(1, "feature-x")).render(120)[0])).toContain(
+			"(main @ feature-x)",
+		);
+		expect(stripAnsi(new FooterComponent(session, createFooterData(1)).render(120)[0])).toContain("(main)");
+	});
 });

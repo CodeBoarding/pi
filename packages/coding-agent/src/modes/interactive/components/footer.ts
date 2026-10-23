@@ -166,8 +166,9 @@ export class FooterComponent implements Component {
 
 		// Add git branch if available
 		const branch = this.footerData.getGitBranch();
+		const worktree = this.footerData.getWorktreeName();
 		if (branch) {
-			pwd = `${pwd} (${branch})`;
+			pwd = worktree ? `${pwd} (${branch} @ ${worktree})` : `${pwd} (${branch})`;
 		}
 
 		// Add session name if set
