@@ -4,7 +4,7 @@ import { join } from "node:path";
 import { Agent, type AgentEvent, type AgentTool } from "@earendil-works/pi-agent-core";
 import { type AssistantMessage, createAssistantMessageEventStream, getModel } from "@earendil-works/pi-ai/compat";
 import { Type } from "typebox";
-import { afterEach, beforeEach, describe, expect, it } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { AgentSession } from "../src/core/agent-session.ts";
 import { AuthStorage } from "../src/core/auth-storage.ts";
 import { SessionManager } from "../src/core/session-manager.ts";
@@ -47,6 +47,7 @@ describe("AgentSession retry", () => {
 	});
 
 	afterEach(() => {
+		vi.restoreAllMocks();
 		if (session) {
 			session.dispose();
 		}
@@ -155,7 +156,8 @@ describe("AgentSession retry", () => {
 	});
 
 	it("caps agent retry delay", async () => {
-		// Regression for #8826.
+		// Regression for #8826. The top of the jitter range is the unjittered delay.
+		vi.spyOn(Math, "random").mockReturnValue(1);
 		const created = await createSession({ failCount: 4, maxRetries: 5, maxAgentDelayMs: 5 });
 		const delays: number[] = [];
 		created.session.subscribe((event) => {
