@@ -1,7 +1,7 @@
 {
   "repository_name": ".codeboarding-target",
-  "timestamp": "2026-10-23T22:31:32.402894+00:00",
-  "overall_score": 0.9917744169937659,
+  "timestamp": "2026-10-23T23:20:06.962904+00:00",
+  "overall_score": 0.991775366501212,
   "check_summaries": [
     {
       "check_name": "function_size",
@@ -11,10 +11,10 @@
         "typescript"
       ],
       "check_type": "standard",
-      "total_entities_checked": 8657,
+      "total_entities_checked": 8658,
       "findings_count": 70,
       "warning_count": 70,
-      "score": 0.9919140579877556,
+      "score": 0.9919149919149919,
       "finding_groups": [
         {
           "severity": "warning",
