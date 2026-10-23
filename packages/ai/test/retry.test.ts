@@ -1,6 +1,12 @@
 import { describe, expect, it, vi } from "vitest";
 import { fauxAssistantMessage } from "../src/providers/faux.ts";
-import { isRetryableAssistantError, type RetryPolicy, retryAssistantCall, retryDelayMs } from "../src/utils/retry.ts";
+import {
+	isRetryableAssistantError,
+	jitteredRetryDelayMs,
+	type RetryPolicy,
+	retryAssistantCall,
+	retryDelayMs,
+} from "../src/utils/retry.ts";
 
 const openAIExplicitRetryMessage =
 	"An error occurred while processing your request. You can retry your request, or contact us through our help center at help.openai.com if the error persists. Please include the request ID req_******** in your message.";
@@ -148,6 +154,18 @@ describe("retryDelayMs", () => {
 		expect(retryDelayMs({ baseDelayMs: 2000 }, 6)).toBe(60000);
 		expect(retryDelayMs({ baseDelayMs: 2000, maxAgentDelayMs: 5000 }, 5)).toBe(5000);
 		expect(retryDelayMs({ baseDelayMs: 2000, maxAgentDelayMs: 0 }, 5)).toBe(0);
+	});
+});
+
+describe("jitteredRetryDelayMs", () => {
+	it("keeps the delay between half and all of the unjittered one", () => {
+		expect(jitteredRetryDelayMs({ baseDelayMs: 2000 }, 3, () => 0)).toBe(4000);
+		expect(jitteredRetryDelayMs({ baseDelayMs: 2000 }, 3, () => 1)).toBe(8000);
+		expect(jitteredRetryDelayMs({ baseDelayMs: 2000 }, 3, () => 0.5)).toBe(6000);
+	});
+
+	it("still respects the cap", () => {
+		expect(jitteredRetryDelayMs({ baseDelayMs: 2000, maxAgentDelayMs: 5000 }, 5, () => 1)).toBe(5000);
 	});
 });
 

@@ -139,6 +139,19 @@ export function retryDelayMs(policy: Pick<RetryPolicy, "baseDelayMs" | "maxAgent
 	return Math.min(safeDelay, policy.maxAgentDelayMs ?? DEFAULT_MAX_AGENT_RETRY_DELAY_MS);
 }
 
+/**
+ * {@link retryDelayMs} with "equal jitter": half the delay is kept, the other half is random.
+ * Sessions that failed together then retry spread out instead of all at once.
+ */
+export function jitteredRetryDelayMs(
+	policy: Pick<RetryPolicy, "baseDelayMs" | "maxAgentDelayMs">,
+	attempt: number,
+	random: () => number = Math.random,
+): number {
+	const delay = retryDelayMs(policy, attempt);
+	return Math.round(delay / 2 + (delay / 2) * random());
+}
+
 /** Optional callbacks emitted by {@link retryAssistantCall} around each retry. */
 export interface RetryCallbacks {
 	/** Emitted before the backoff sleep of each retry attempt (1-indexed). */
