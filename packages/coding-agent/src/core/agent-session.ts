@@ -31,7 +31,7 @@ import {
 	runToolCall,
 	type ThinkingLevel,
 } from "@earendil-works/pi-agent-core";
-import { contentText, getCurrentSystemMessage, retryDelayMs } from "@earendil-works/pi-ai";
+import { contentText, getCurrentSystemMessage, jitteredRetryDelayMs } from "@earendil-works/pi-ai";
 import type {
 	AssistantMessage,
 	AuthResult,
@@ -3803,7 +3803,7 @@ export class AgentSession {
 			return false;
 		}
 
-		const delayMs = retryDelayMs(settings, this._retryAttempt);
+		const delayMs = jitteredRetryDelayMs(settings, this._retryAttempt);
 
 		this._emit({
 			type: "auto_retry_start",
@@ -3816,7 +3816,7 @@ export class AgentSession {
 		// Keep the failed attempt in raw history while durably omitting it from model projection.
 		this._omitRecoveryAttempt(message);
 
-		// Wait with exponential backoff (abortable)
+		// Wait with jittered exponential backoff (abortable)
 		this._retryAbortController = new AbortController();
 		try {
 			await sleep(delayMs, this._retryAbortController.signal);
