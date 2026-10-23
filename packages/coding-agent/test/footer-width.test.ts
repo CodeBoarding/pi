@@ -92,9 +92,10 @@ function createSession(options: {
 	return session as unknown as AgentSession;
 }
 
-function createFooterData(providerCount: number): ReadonlyFooterDataProvider {
+function createFooterData(providerCount: number, worktree: string | null = null): ReadonlyFooterDataProvider {
 	const provider = {
 		getGitBranch: () => "main",
+		getWorktreeName: () => worktree,
 		getExtensionStatuses: () => new Map<string, string>(),
 		getAvailableProviderCount: () => providerCount,
 		onBranchChange: (callback: () => void) => {
